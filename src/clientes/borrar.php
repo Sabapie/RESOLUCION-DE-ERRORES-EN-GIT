@@ -1,7 +1,5 @@
 <?php 
-// Headers necesarios. 
- 
-// Permitimos que el archivo pueda ser leído por cualquier usuario. 
+
 header("Access-Control-Allow-Origin: *"); 
  
 // Indicamos que el resultado se devolverá en un JSON y codificado en UTF-8 
