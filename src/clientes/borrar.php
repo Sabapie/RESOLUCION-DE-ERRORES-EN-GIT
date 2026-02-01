@@ -8,7 +8,7 @@ header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8"); 
  
 // Recibimos los datos por POST. 
-header("Access-Control-Allow-Methods: GET"); 
+header("Access-Control-Allow-Methods: DELETE"); 
    
 // Incluimos la gestión de la tabla clientes. 
 include_once('../bd/clientes.php'); 
@@ -67,7 +67,7 @@ else
         // Código de respuesta - 400 Bad Resquest 
         http_response_code(400); 
  
-        $json['message'] = 'No se indica el cliente a borrar.'; 
+        $json['message'] = 'ERROR: No se indica el cliente a borrar.'; 
     }
 } 
 // Devolvemos el JSON 
