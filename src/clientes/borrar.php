@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] != "DELETE")
     // Código de respuesta - Method Not Alloweb 
     http_response_code(405);     
  
-    $json['message'] = 'Sólo se permite el método DELETE.'; 
+    $json['message'] = 'En esta parte sólo se permite el método DELETE.'; 
 } 
 else
     { 
@@ -39,7 +39,7 @@ else
         $filas = $cliente->Borrar(); 
  
         // Si no se ha podido borrar. 
-        if ($filas == -1 || $clientes->Error()) 
+        if ($filas == -1 || $cliente->Error()) 
         { 
             // Código de respuesta - 400 Bad Request 
             http_response_code(400); 
